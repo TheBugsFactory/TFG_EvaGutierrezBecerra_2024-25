@@ -33,37 +33,36 @@ Las herramientas están diseñadas para trabajar en secuencia, creando un flujo 
 Para el correcto funcionamiento de los scripts, se espera la siguiente organización de archivos y carpetas (algunas son generadas por los propios scripts):
 
 PROYECTO_RAIZ/
-├── simulaciones_abaqus/ <-- Contiene los archivos .odb y .sta de las simulaciones
-│ ├── sim_A_v10/
-│ │ ├── sim_A_v10.odb
-│ │ └── sim_A_v10.sta
-│ └── sim_B_v20/
-│ ├── sim_B_v20.odb
-│ └── sim_B_v20.sta
-│ └── ...
+├── simulaciones_abaqus/     <-- Contiene los archivos .odb y .sta de las simulaciones
+│   ├── sim_A_v10/
+│   │   ├── sim_A_v10.odb
+│   │   └── sim_A_v10.sta
+│   ├── sim_B_v20/
+│   │   ├── sim_B_v20.odb
+│   │   └── sim_B_v20.sta
+│   └── ...
 ├── status_manager.py
 ├── rpt_manager.py
 ├── rpt_processor.py
-├── Status/ <-- Generada por status_manager.py
-│ └── analysis_status.txt
-├── Reports/ <-- Generada por rpt_manager.py
-│ ├── sim_A_v10/
-│ │ ├── Pressure_..._mean.rpt
-│ │ ├── A1_Acc_mean.rpt
-│ │ └── ...
-│ └── sim_B_v20/
-│ └── ...
-└── Results/ <-- Generada por rpt_processor.py
-├── sim_A_v10/
-│ ├── Pressure_vs_Time.png
-│ ├── Acceleration_Magnitude_vs_Time.png
-│ └── ...
-├── sim_B_v20/
-│ └── ...
-├── HIC15_vs_Impact_Speed.png
-├── Max_HIC_PLA_vs_Impact_Speed.png
-└── ...
-
+├── Status/                  <-- Generada por status_manager.py
+│   └── analysis_status.txt
+├── Reports/                 <-- Generada por rpt_manager.py
+│   ├── sim_A_v10/
+│   │   ├── Pressure_..._mean.rpt
+│   │   ├── A1_Acc_mean.rpt
+│   │   └── ...
+│   └── sim_B_v20/
+│       └── ...
+└── Results/                 <-- Generada por rpt_processor.py
+    ├── sim_A_v10/
+    │   ├── Pressure_vs_Time.png
+    │   ├── Acceleration_Magnitude_vs_Time.png
+    │   └── ...
+    ├── sim_B_v20/
+    │   └── ...
+    ├── HIC15_vs_Impact_Speed.png
+    ├── Max_HIC_PLA_vs_Impact_Speed.png
+    └── ...
 
 _**Nota**_: Inicialmente, los scripts `status_manager.py` y `rpt_manager.py` se ejecutan desde el directorio que contiene los archivos `.odb` y `.sta` (e.g., dentro de `simulaciones_abaqus/` o copiándolos al directorio raíz donde están los scripts).
 
