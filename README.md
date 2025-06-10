@@ -31,6 +31,7 @@ Las herramientas están diseñadas para trabajar en secuencia, creando un flujo 
  **📂 Estructura de Directorios Esperada**
 
 Para el correcto funcionamiento de los scripts, se espera la siguiente organización de archivos y carpetas (algunas son generadas por los propios scripts):
+
 PROYECTO_RAIZ/
 ├── simulaciones_abaqus/ <-- Contiene los archivos .odb y .sta de las simulaciones
 │ ├── sim_A_v10/
@@ -62,6 +63,8 @@ PROYECTO_RAIZ/
 ├── HIC15_vs_Impact_Speed.png
 ├── Max_HIC_PLA_vs_Impact_Speed.png
 └── ...
+
+
 _**Nota**_: Inicialmente, los scripts `status_manager.py` y `rpt_manager.py` se ejecutan desde el directorio que contiene los archivos `.odb` y `.sta` (e.g., dentro de `simulaciones_abaqus/` o copiándolos al directorio raíz donde están los scripts).
 
 **⚙️ Requisitos**
