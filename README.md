@@ -26,7 +26,8 @@ Se han implementado tres scripts principales de Python, cada uno enfocado en una
 **🌊 Flujo de Trabajo General**
 
 Las herramientas están diseñadas para trabajar en secuencia, creando un flujo de trabajo automatizado:
-![Diagrama de Flujo Global](https://github.com/user-attachments/assets/15f34215-a7d8-432f-bdb8-654c24a84702)
+<img width="595" alt="Diagrama_global_v2" src="https://github.com/user-attachments/assets/30bdc3e3-2354-4a7f-9c2e-3ef3c4baa6a2" />
+
 
  **📂 Estructura de Directorios Esperada**
 
